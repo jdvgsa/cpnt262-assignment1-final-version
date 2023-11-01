@@ -58,6 +58,8 @@ const imagesArray = [
 
 const gallery = document.getElementById("gallery");
 
+// Function for rendering image into HTML
+
 function createImageElement(imageObj) {
   const { src, alt } = imageObj;
   const imageElement = document.createElement('img');
@@ -66,6 +68,7 @@ function createImageElement(imageObj) {
   imageElement.classList.add('gallery-image');
   return imageElement;
 }
+
 
 function displayImages(imageArray) {
   imageArray.forEach(imageObj => {
