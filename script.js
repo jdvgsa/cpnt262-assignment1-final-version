@@ -37,3 +37,41 @@ darkMode.addEventListener("click", function() {
   }
 
 });
+
+//  Image Gallery
+
+const imagesArray = [
+  { src: "images/re1.jpg", },
+  { src: "images/re2.jpg", },
+  { src: "images/re3.jpg", },
+  { src: "images/re4.jpg", },
+  { src: "images/re5.jpg", },
+  { src: "images/re6.jpg", },
+  { src: "images/re7.jpg", },
+  { src: "images/re8.jpg", },
+  { src: "images/re9.jpg", },
+  { src: "images/re10.jpg", }
+  
+];
+
+const gallery = document.getElementById("gallery");
+
+function createImageElement(imageObj) {
+  const { src, alt } = imageObj;
+  const imageElement = document.createElement('img');
+  imageElement.src = src;
+  imageElement.alt = alt;
+  imageElement.classList.add('gallery-image');
+  return imageElement;
+}
+
+function displayImages(imageArray) {
+  imageArray.forEach(imageObj => {
+    const imageElement = createImageElement(imageObj);
+    gallery.appendChild(imageElement);
+  });
+}
+
+// Initial display
+displayImages(imagesArray);
+
