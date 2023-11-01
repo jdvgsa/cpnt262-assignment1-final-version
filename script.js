@@ -1,3 +1,5 @@
+"use strict";
+
 // Read more Toggle
 
 const toggleButton = document.getElementById("toggleButton");
