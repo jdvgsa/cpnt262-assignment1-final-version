@@ -38,7 +38,9 @@ darkMode.addEventListener("click", function() {
 
 });
 
-//  Image Gallery
+/*  Image Gallery generated with JS 
+    Rendering Images from an array of objects,
+    using Javascript to generate image layout*/
 
 const imagesArray = [
   { src: "images/re1.jpg", },
@@ -73,5 +75,17 @@ function displayImages(imageArray) {
 }
 
 // Initial display
+
 displayImages(imagesArray);
+
+// Input Field
+
+/* This should show an alert to the user indicating how much they are donating once they hit submit */
+
+function showInput() {
+  const userInput = document.getElementById("userInput").value;
+  alert("You entered: " + userInput);
+}
+
+document.getElementById("submitButton").addEventListener("click", showInput);
 
