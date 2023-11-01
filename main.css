@@ -29,6 +29,10 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover {
+  color: red;
+}
+
 main {
   padding: 20px;
 }
