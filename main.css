@@ -33,14 +33,20 @@ main {
   padding: 20px;
 }
 
+h3 {
+  display: flex;
+  justify-content: center;
+}
 
 .hidden {
   display: none;
   
 }
 
-
-
+.donations {
+  display: flex;
+  justify-content: center;
+}
 
 footer {
   background-color: #333;
